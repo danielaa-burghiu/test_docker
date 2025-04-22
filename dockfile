@@ -1,0 +1,20 @@
+# Folosește o imagine de bază oficială de Node.js
+FROM node:16
+
+# Setează directorul de lucru
+WORKDIR /app
+
+# Copiază fișierele package.json și package-lock.json
+COPY package*.json ./
+
+# Instalează dependențele
+RUN npm install
+
+# Copiază restul fișierelor aplicației
+COPY . .
+
+# Expune portul pe care aplicația va rula
+EXPOSE 8080
+
+# Comanda pentru a porni aplicația
+CMD ["npm", "start"]
