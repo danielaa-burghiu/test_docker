@@ -1,2 +1,1 @@
-# test_docker
-combinare cu docker
+![Docker Screenshot](images/demonstratie.png)
