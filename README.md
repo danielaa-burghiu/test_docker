@@ -1,1 +1,1 @@
-![Docker Screenshot](images/demonstratie.png)
+![Docker Screenshot](images/demo.png)
